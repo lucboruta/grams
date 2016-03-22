@@ -1,0 +1,21 @@
+.TH GRAMS 1
+.SH NAME
+grams \- enumerate all n-grams from the standard input
+.SH SYNOPSIS
+.B grams
+[\fB\-d\fR \fIdelim\fR]
+[[\fIm\fR] \fIn\fR]
+.SH DESCRIPTION
+.B grams
+Enumerate all n-grams from the standard input.
+.PP
+.IP \[bu] 2
+If no argument is given, \fIn\fR defaults to 1 and \fBgrams\fR enumerates all unigrams.
+.IP \[bu]
+If one argument \fIn\fR is given, \fBgrams\fR enumerates all n-grams.
+.IP \[bu]
+If two arguments \fIm\fR and \fIn\fR are given, \fBgrams\fR enumerates all n-grams from \fIm\fR to \fIn\fR (inclusive).
+.SH OPTIONS
+.TP
+.BR \-d " " \fIdelim\fR
+Use \fIdelim\fR as the token delimiter characters instead of the space character.
